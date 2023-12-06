@@ -152,6 +152,7 @@ public class PHPartnersMenuPage extends PHBrowserConfig {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Click here to copy the Credentials')]")));
 PartnersCredentials_Verify.click();
 
+
     }
 
     public void VerifyPartnersCredentialsAlertBox() throws InterruptedException {
