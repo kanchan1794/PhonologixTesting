@@ -11,6 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		//tags = "@Login or @PartnersMenu"
         tags ="@Login or @PartnersMenu or @PartnersListSubMenu or   @PartnerPageBreadCrumbs or @PartnersShowCredentials"
 
+
 		//or @TherapistListSubMenu or @TherapistExcelFileDownload or @PageBreadCrumbs or @TherapistListTableScrollDown or @TherapistShowCredentials or @TherapistViewDetails or
 // or @TherapistAddSubMenu  or @Dashboard
 
