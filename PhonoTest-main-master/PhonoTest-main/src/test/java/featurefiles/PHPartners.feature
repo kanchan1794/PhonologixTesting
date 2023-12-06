@@ -18,6 +18,7 @@ Scenario: Phonologix Partners Functionality
     When Admin clicks on Partners perticular page breadcrumbs
     Then admin can see the Partners data on perticular page
 
+
 #  @PartnersInsideListTableScrollFunction
  #   And Admin can scroll vertically inside the Partners list table
   #  And Admin can scroll horizantally inside the Partners list table

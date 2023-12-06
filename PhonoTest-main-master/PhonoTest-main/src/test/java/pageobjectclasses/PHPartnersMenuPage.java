@@ -153,6 +153,7 @@ public class PHPartnersMenuPage extends PHBrowserConfig {
 PartnersCredentials_Verify.click();
 
 
+
     }
 
     public void VerifyPartnersCredentialsAlertBox() throws InterruptedException {

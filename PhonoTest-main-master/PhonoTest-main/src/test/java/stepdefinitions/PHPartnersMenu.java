@@ -96,6 +96,7 @@ public class PHPartnersMenu extends PHBrowserConfig {
 
     }
 
+
     @When("Admin Clicks On Key Icon To View Partners Credentials")
     public void adminClicksOnKeyIconToViewPartnersCredentials() throws InterruptedException {
         ObjPHPMBPage.ClickToViewPartnersCredentials();
