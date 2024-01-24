@@ -2,7 +2,7 @@ Feature: Test Phonologix Dashboard Functionality
 
 
 @Login
-    Scenario: Test Login Fuctionality
+    Scenario: Test Login And Dashboard Fuctionality
     Given Browser is open and user is logged in
 #  @Dashboard
 #  Scenario: Phonologix Dashboard Functionality
