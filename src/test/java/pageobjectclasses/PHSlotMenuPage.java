@@ -98,6 +98,7 @@ public class PHSlotMenuPage {
         DRP_SelectStatus.selectByValue("booked");
 
 
+
 //set the dropdown value to '' using javascript
 //        SelectTherapist.click();
 //        Thread.sleep(3000);
