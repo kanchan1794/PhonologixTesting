@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
         glue = {"stepdefinitions"},
         plugin = {"json:target/cucumber.json"},
 		//tags = "@Login or @InvoicesMenu or   @InvoicePageBreadCrumbs"
-		tags="@Login or @SlotMenu or @SlotCalendarViewSubmenu"
+		tags="@Login or @SlotMenu or @SlotZoomReportSubmenu"
 		//tags = "@Login or @PartnersMenu"
        //tags ="@Login or @PartnersMenu or @PartnersListSubMenu or @PartnersListTableScrollDown "
        //  tags ="@Login or @TransactionMenu or   @TransactionPageBreadCrumbs or   @TransactionListTableScrollDown"

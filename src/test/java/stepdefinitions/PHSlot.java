@@ -86,4 +86,41 @@ public class PHSlot extends PHBrowserConfig {
         System.out.println("ADMIN CAN SEE SLOT CALENDAR FOR PERTICULAR START-TIME");
 
     }
+
+    @When("Admin clicks on Slot-Zoom Report submenu")
+    public void adminClicksOnSlotZoomReportSubmenu() {
+        ObjPHSLMPage.ClickZoomReportSubMenu();
+        System.out.println("ADMIN CAN CLICK ON ZOOM REPORT SUB MENU");
+
+        
+    }
+
+    @Then("Admin Can See The Slot-Zoom Report")
+    public void adminCanSeeTheSlotZoomReport() {
+        System.out.println("ADMIN CAN SEE THE SLOT ZOOM REPORT");
+
+
+    }
+
+    @When("Admin Select Start-Date And End-Date And click On Submit Button")
+    public void adminSelectStartTimeAndEndTimeAndClickOnSubmitButton() throws InterruptedException {
+        ObjPHSLMPage.SelectStartDateEndDate();
+        System.out.println("ADMIN CAN SELECT START-DATE AND END-DATE");
+        
+    }
+
+    @Then("Admin Can See Zoom Report For Selected Duration")
+    public void adminCanSeeZoomReportForSelectedDuration() {
+        
+    }
+
+    @When("Admin Select Email From DropDown List")
+    public void adminSelectEmailFromDropDownList() {
+
+
+    }
+
+    @Then("Admin Can See Zoom Report For Selected Email")
+    public void adminCanSeeZoomReportForSelectedEmail() {
+    }
 }

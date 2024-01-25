@@ -1,10 +1,10 @@
-Feature: Test Phonologix Slot Menu Functionality
+Feature: Test Phonologix Sales Team Menu Functionality
   @SlotMenu
-  Scenario: Phonologix Slot Functionality
+  Scenario: Phonologix Sales Team Functionality
    # Given Admin is on phonologix dashborad
     #Given Browser is open and user is logged in
-    When Admin clicks on Slot menu
-    Then Admin can see Slot Submenu Options
+    When Admin clicks on Sales Team menu
+    Then Admin can see Sales Team Submenu Options
   @SlotCalendarViewSubmenu
   Scenario: Phonologix Slot CalendarView Submenu Functionality
     When Admin clicks on Slot-CalendarView submenu

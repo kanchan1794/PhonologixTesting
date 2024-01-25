@@ -105,10 +105,36 @@ public class PHSlotMenuPage {
 //        js.executeScript("arguments[0].click();",driver.findElement(By.xpath("//*[contains(text(),'sayali')]")));
 //        Thread.sleep(3000);
 //        System.out.println("SELECT THERAPIST NAME");
+    }
 
 
-
+    public void ClickZoomReportSubMenu() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Zoom Report")));
+        WebElement ZoomReport_Link = driver.findElement(By.linkText("Zoom Report"));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", ZoomReport_Link);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", ZoomReport_Link);
 
     }
+    public void SelectStartDateEndDate() throws InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//header/div[1]/div[1]/div[1]/input[1]")));
+        WebElement SelectStartDate = driver.findElement(By.xpath("//header/div[1]/div[1]/div[1]/input[1]"));
+      //  driver.findElement(By.xpath("//a[normalize-space()='20']")).click();
+
+        // SelectStartDate.click();
+
+      Thread.sleep(3000);
+        SelectStartDate.sendKeys("01-01-2024");
+
+        //Press tab to shift focus to time field
+
+      //  dateBox.sendKeys(Keys.TAB);
+
+        //  ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", SelectStartDate);
+       // ((JavascriptExecutor) driver).executeScript("arguments[0].click();", SelectStartDate);
+
+    }
+
 }
 
