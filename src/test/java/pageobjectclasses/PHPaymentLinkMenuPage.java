@@ -23,6 +23,8 @@ public class PHPaymentLinkMenuPage {
 
     public void ViewPaymentLinkMenu()
     {
+        WebElement PaymentLinkScroll = driver.findElement(By.xpath("//body[1]/div[1]/div[2]/div[1]/ul[1]/div[2]"));
+        PaymentLinkScroll.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Payments Link")));

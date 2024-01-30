@@ -20,7 +20,9 @@ public class PHBankTransferApprovalMenuPage extends PHBrowserConfig {
     }
 
     public void ClickBankTransferApprovalMenu() throws InterruptedException {
-           Thread.sleep(2000);
+//        WebElement BankTransferApprovalScroll = driver.findElement(By.xpath("//body/div[@id='root']/div[2]/div[1]/ul[1]/div[2]"));
+//        BankTransferApprovalScroll.click();
+//           Thread.sleep(2000);
            WebElement BanktransferMenu = driver.findElement(By.xpath("//body/div[@id='root']/div[2]/div[1]/ul[1]/div[2]/div[1]"));
            Actions actions = new Actions(driver);
            actions.moveToElement(BanktransferMenu).click().perform();

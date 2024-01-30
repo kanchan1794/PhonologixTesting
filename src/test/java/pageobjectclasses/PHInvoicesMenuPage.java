@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,6 +21,13 @@ public class PHInvoicesMenuPage {
 
     public void ClickInvoicesMenu()
     {
+//       // WebElement InvoicesScroll = driver.findElement(By.xpath("//body[1]/div[1]/div[2]/div[1]/ul[1]/div[2]"));
+//        //InvoicesScroll.click();
+//       // WebElement hoverable = driver.findElement(By.id("hover"));
+//        new Actions(driver)
+//                .moveToElement(InvoicesScroll)
+//                .perform();
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Invoices")));
         WebElement InvoicesMenu_Link = driver.findElement(By.linkText("Invoices"));
